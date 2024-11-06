@@ -1,0 +1,154 @@
+html,
+body{
+    direction: rtl;
+}
+
+.header .right .bottom ul li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--main-blue-color);
+    transition: 0.5s;
+}
+
+.header .right .bottom ul li.active::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-blue-color);
+    transition: 0.5s;
+    bottom: -4px;
+}
+
+.about-content .container .content .info .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: var(--main-blue-color);
+    right: -15px;
+}
+
+.product .container .image:hover .det {
+    display: flex;
+    right: 0;
+    transition: 0.5s all ease;
+}
+
+.product .container .image .det {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #353535;
+    border-radius: 15px;
+    padding: 30px;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s all ease;
+    right: -601px;
+    cursor: pointer;
+}
+
+.footer .container .top .right .helpful-link ul li img{
+    transform: rotate(180deg);
+}
+
+.product-content .container .products .prod:hover .det {
+    display: flex;
+    right: 0;
+    transition: 0.5s all ease;
+}
+
+.product-content .container .products .prod .det {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #353535;
+    border-radius: 15px;
+    padding: 30px;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s all ease;
+    right: -601px;
+    cursor: pointer;
+}
+
+.items-content .container .info .title::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: var(--main-blue-color);
+    right: -15px;
+}
+
+.subitems-content .container .info .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: var(--main-blue-color);
+    right: -15px;
+}
+
+.landing-subitems .container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 7px;
+    background-color: #ffffff;
+}
+
+.contact-content .container .contact-section .right form label {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 27px;
+    border-left: 0px solid var(--sec-main-blue-color);
+    padding-left: 0px;
+    border-right: 5px solid var(--sec-main-blue-color);
+    padding-right: 5px;
+}
+
+.landing-contact .container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 7px;
+    background-color: #ffffff;
+}
+
+.about-content .container{
+    padding-right: 30px;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    background-color: #00000008;
+    border-radius: 5px;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transition: var(--main-transition);
+    z-index: -1;
+}
